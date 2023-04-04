@@ -1,0 +1,81 @@
+.container{
+    justify-content: center;
+    align-items: center;
+ background: rgb(0,0,128);
+background: linear-gradient(135deg, rgba(0,0,128,1) 0%, rgba(0,0,0,1) 56%);
+
+box-shadow: #ffa500;
+} 
+
+body
+{
+    min-height: 100vh; 
+}
+
+.report{
+    display: flex;
+    justify-content: center;
+}
+.cr{
+   
+    display: flex;
+    justify-content: center;
+    background-color:rgb(138, 113, 235);
+    border: 1px solid #ff0000;
+    margin-left: 1px; 
+  }
+.paytable
+{
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.payth
+{
+    background-color: #333;
+    color: #000000;
+}
+
+.payth, .paytd
+{
+    padding: .8rem;
+    font-size: 1.0rem;
+   
+}
+
+@media screen and (max-width:1024px){
+    
+    
+    .paytable{
+           text-align: center;
+    }
+    .paythead{
+           display: none;
+    }
+    .paytd{
+          display: block;
+          text-align: center;
+          margin: 15px;
+    }
+
+    .paytd:first-child{
+        background-color: gray;
+        color: white; 
+        justify-content: center;
+     
+    }
+    .paytd:nth-child(1)::before{
+        content:"No.: "
+    }
+
+    .paytd:nth-child(2)::before{
+        content:"Payment Mode: "
+    }
+
+  
+    
+    .paytd:nth-child(3)::before{
+        content:"Action : "
+    }
+
+}
